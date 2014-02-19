@@ -1,3 +1,5 @@
+require 'active_support/core_ext/time'
+
 module LogMinimal
   module Methods
     [:fatal, :error, :warn, :info, :debug].each do |method|
