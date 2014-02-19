@@ -17,20 +17,8 @@ class ActionController
     @logger ||= Logger.new(File.expand_path(File.dirname(__FILE__) + '/dummy.log'))
   end
 
-  def request
-    @request ||= Request.new
-  end
-
-  def session
-    {user_id: :foo}
-  end
-
-  def action_name
-    "dummy"
-  end
-
-  def current_user
-    nil
+  def show
+    fatalf("foo")
   end
 end
 
@@ -46,8 +34,15 @@ class LogMinimalTest < Test::Unit::TestCase
   end
 
   def test_logger
-    @controller.fatalf('foo')
-    assert File.exist? File.expand_path(File.dirname(__FILE__) + '/dummy.log')
-    FileUtils.rm File.expand_path(File.dirname(__FILE__) + '/dummy.log')
+    @controller.show
+    assert File.exist? log
+    body = File.read(log)
+    assert body.include?('show')
+    assert body.include?('foo')
+    FileUtils.rm log
+  end
+
+  def log
+    File.expand_path(File.dirname(__FILE__) + '/dummy.log')
   end
 end
