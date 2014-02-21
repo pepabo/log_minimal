@@ -1,6 +1,6 @@
 # LogMinimal
 
-TODO: Write a gem description
+Ruby port of Log::Minimal
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+(TBD)
 
 ## Contributing
 

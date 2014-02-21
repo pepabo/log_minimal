@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = LogMinimal::VERSION
   spec.authors       = ["SHIBATA Hiroshi"]
   spec.email         = ["shibata.hiroshi@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Ruby port of Log::Minimal.}
+  spec.description   = %q{Ruby port of Log::Minimal.}
+  spec.homepage      = "https://github.com/paperboy-all/log_minimal"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
