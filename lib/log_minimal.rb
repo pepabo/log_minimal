@@ -1,3 +1,4 @@
+require 'log_minimal/configuration'
 require 'log_minimal/methods'
 
 if defined?(::Rails::Railtie)

@@ -6,5 +6,11 @@ module LogMinimal
         logger.send(method, "%s\t%s" % [caller, message])
       end
     end
+
+    unless respond_to?(:logger)
+      def logger
+        @_logger ||= Logger.new(Configuration.path)
+      end
+    end
   end
 end
