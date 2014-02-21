@@ -5,4 +5,4 @@ rvm:
   - 2.1.0
   - ruby-head
 
-script: ruby -Ilib:test test/log_minimal_test.rb
+script: rake test
