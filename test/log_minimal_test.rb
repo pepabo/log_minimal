@@ -3,12 +3,6 @@ require 'fileutils'
 require 'logger'
 require 'log_minimal/methods'
 
-class Request
-  def session_options
-    {id: :bar}
-  end
-end
-
 class ActionController
   include LogMinimal::Methods
 
