@@ -1,5 +1,4 @@
 require 'test/unit'
-require 'active_support/core_ext/time'
 require 'fileutils'
 require 'logger'
 require 'log_minimal/methods'
