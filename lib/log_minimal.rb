@@ -1,3 +1,4 @@
+require 'logger'
 require 'log_minimal/configuration'
 require 'log_minimal/methods'
 
