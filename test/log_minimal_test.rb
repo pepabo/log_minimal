@@ -3,6 +3,14 @@ require 'fileutils'
 require 'logger'
 require 'log_minimal'
 
+class LogMinimalDefaultTest < Test::Unit::TestCase
+  include LogMinimal::Methods
+
+  def test_default
+      assert_equal $stderr, LogMinimal::Configuration.path
+  end
+end
+
 class ActionController
   include LogMinimal::Methods
 
