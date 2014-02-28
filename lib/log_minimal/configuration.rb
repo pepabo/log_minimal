@@ -4,7 +4,7 @@ module LogMinimal
       attr_writer :path
 
       def path
-        @path || $stderr
+        @path || $stdout
       end
     end
   end

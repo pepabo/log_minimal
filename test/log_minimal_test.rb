@@ -7,7 +7,7 @@ class LogMinimalDefaultTest < Test::Unit::TestCase
   include LogMinimal::Methods
 
   def test_default
-      assert_equal $stderr, LogMinimal::Configuration.path
+      assert_equal $stdout, LogMinimal::Configuration.path
   end
 end
 
