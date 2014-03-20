@@ -1,5 +1,8 @@
 # LogMinimal
 
+[![Gem Version](https://badge.fury.io/rb/log_minimal.png)](http://badge.fury.io/rb/log_minimal)
+[![Build Status](https://travis-ci.org/paperboy-all/log_minimal.png?branch=master)](https://travis-ci.org/paperboy-all/log_minimal)
+
 Ruby port of Log::Minimal
 
 ## Installation
