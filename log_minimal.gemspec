@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["shibata.hiroshi@gmail.com"]
   spec.summary       = %q{Ruby port of Log::Minimal.}
   spec.description   = %q{Ruby port of Log::Minimal.}
-  spec.homepage      = "https://github.com/paperboy-all/log_minimal"
+  spec.homepage      = "https://github.com/pepabo/log_minimal"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
